@@ -1,0 +1,426 @@
+{
+  "status": "success",
+  "content": {
+    "permission": {
+      "idss-insight-linkage": 15,
+      "idss-insight-data-import": 15,
+      "idss-insight-task-config": 15,
+      "manage-base-user": 15,
+      "manage-base-dept": 15,
+      "idss-insight-component-group": 15,
+      "manage-base-org": 15,
+      "idss-insight-dashboard": 15,
+      "idss-insight-component-config-edit": 15,
+      "manage-base-role": 15,
+      "idss-insight-component-config-add": 15
+    },
+    "routers": [
+      {
+        "name": "todo-list",
+        "meta": {
+          "title": "待办中心",
+          "manageFree": true
+        }
+      },
+      {
+        "name": "view",
+        "icon": "Operation-map",
+        "meta": {
+          "title": "安全运营"
+        },
+        "children": [
+          {
+            "name": "data-asset-view",
+            "meta": {
+              "title": "数据资产视图"
+            }
+          },
+          {
+            "name": "event-manage",
+            "meta": {
+              "title": "数据安全事件视图"
+            }
+          },
+          {
+            "name": "data-security-situation-search",
+            "meta": {
+              "title": "全文检索"
+            }
+          },
+          {
+            "name": "operation-event-manage",
+            "meta": {
+              "title": "运维事件视图"
+            }
+          },
+          {
+            "name": "view-dashboard-asset",
+            "meta": {
+              "title": "数据资产及敏感数据分布"
+            }
+          }
+        ]
+      },
+      {
+        "name": "asset",
+        "icon": "property-information1",
+        "meta": {
+          "title": "数据资产"
+        },
+        "children": [
+          {
+            "name": "data-asset-manage-main",
+            "meta": {
+              "title": "数据资产备案"
+            }
+          },
+          {
+            "name": "data-asset-base-info",
+            "meta": {
+              "title": "数据资产统计"
+            },
+            "children": [
+              {
+                "name": "sub-asset",
+                "meta": {
+                  "title": "数据资产"
+                }
+              },
+              {
+                "name": "data-asset-app-info",
+                "meta": {
+                  "title": "应用情况"
+                }
+              },
+              {
+                "name": "data-asset-manage-interface",
+                "meta": {
+                  "title": "对外接口"
+                }
+              },
+              {
+                "name": "data-asset-data-source",
+                "meta": {
+                  "title": "数据采集"
+                }
+              },
+              {
+                "name": "data-asset-manage-sensitive-scene",
+                "meta": {
+                  "title": "涉敏场景"
+                }
+              },
+              {
+                "name": "data-asset-manage-sensitive-person",
+                "meta": {
+                  "title": "涉敏人员"
+                }
+              }
+            ]
+          },
+          {
+            "name": "lifecycle",
+            "meta": {
+              "title": "数据生命周期"
+            },
+            "children": [
+              {
+                "name": "lifecycle-collect",
+                "meta": {
+                  "title": "采集阶段"
+                }
+              },
+              {
+                "name": "lifecycle-store",
+                "meta": {
+                  "title": "存储阶段"
+                }
+              },
+              {
+                "name": "lifecycle-transfer",
+                "meta": {
+                  "title": "传输阶段"
+                }
+              },
+              {
+                "name": "lifecycle-used",
+                "meta": {
+                  "title": "使用阶段"
+                }
+              },
+              {
+                "name": "lifecycle-shard",
+                "meta": {
+                  "title": "共享阶段"
+                }
+              },
+              {
+                "name": "lifecycle-destroy",
+                "meta": {
+                  "title": "销毁阶段"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "strategy",
+        "icon": "strategy-center",
+        "meta": {
+          "title": "策略管理"
+        },
+        "children": [
+          {
+            "name": "strategy-management",
+            "meta": {
+              "title": "策略中心"
+            }
+          },
+          {
+            "name": "strategy-operation",
+            "meta": {
+              "title": "策略操作"
+            }
+          },
+          {
+            "name": "strategy-archiving",
+            "meta": {
+              "title": "策略归档"
+            }
+          },
+          {
+            "name": "classes-manage-method",
+            "meta": {
+              "title": "集团分类分级管理办法"
+            }
+          }
+        ]
+      },
+      {
+        "name": "ability-manage",
+        "icon": "tactics",
+        "meta": {
+          "title": "能力管理"
+        },
+        "children": [
+          {
+            "name": "asset-event",
+            "meta": {
+              "title": "敏感数据发现"
+            },
+            "children": [
+              {
+                "name": "data-asset-manage-task-found",
+                "meta": {
+                  "title": "发现任务"
+                }
+              },
+              {
+                "name": "data-asset-check-list",
+                "meta": {
+                  "title": "核查任务"
+                }
+              },
+              {
+                "name": "system-probe-manage",
+                "meta": {
+                  "title": "探针管理"
+                }
+              }
+            ]
+          },
+          {
+            "name": "data-flow-monitor",
+            "meta": {
+              "title": "数据流转监控"
+            },
+            "children": [
+              {
+                "name": "data-flow-monitor-view",
+                "meta": {
+                  "title": "数据流转监控视图"
+                }
+              },
+              {
+                "name": "data-flow-monitor-operation",
+                "meta": {
+                  "title": "数据流转监控操作"
+                }
+              },
+              {
+                "name": "system-circulation-probe-manage",
+                "meta": {
+                  "title": "数据流转探针管理"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "system",
+        "icon": "setting",
+        "meta": {
+          "title": "系统管理"
+        },
+        "children": [
+          {
+            "name": "system-data-security-analysis",
+            "meta": {
+              "title": "数据安全控制单元事件集中分析"
+            },
+            "children": [
+              {
+                "name": "manage-data-job",
+                "meta": {
+                  "title": "数据接入任务管理"
+                }
+              },
+              {
+                "name": "manage-data-server",
+                "meta": {
+                  "title": "数据接入任务设置"
+                }
+              },
+              {
+                "name": "manage-data-manage",
+                "meta": {
+                  "title": "解析规则管理"
+                }
+              },
+              {
+                "name": "manage-data-dynamic",
+                "meta": {
+                  "title": "我的表单数据"
+                }
+              },
+              {
+                "name": "manage-data-deptEtl",
+                "meta": {
+                  "title": "组件所属部门管理"
+                }
+              },
+              {
+                "name": "manage-base-data-dictionary",
+                "meta": {
+                  "title": "自定义参数选项"
+                }
+              },
+              {
+                "name": "manage-strategy-field",
+                "meta": {
+                  "title": "规则引擎字段管理"
+                }
+              },
+              {
+                "name": "manage-base-sys",
+                "meta": {
+                  "title": "组件节点管理"
+                }
+              },
+              {
+                "name": "manage-data-allpicker",
+                "meta": {
+                  "title": "提取器",
+                  "manageFree": true
+                }
+              },
+              {
+                "name": "manage-data-filepicker",
+                "meta": {
+                  "title": "提取器设置",
+                  "manageFree": true
+                }
+              },
+              {
+                "name": "manage-data-extract",
+                "meta": {
+                  "title": "提取设置",
+                  "manageFree": true
+                }
+              },
+              {
+                "name": "manage-data-analyzeAdd",
+                "meta": {
+                  "title": "新增解析规则",
+                  "manageFree": true
+                }
+              },
+              {
+                "name": "manage-data-analyzeEdit",
+                "meta": {
+                  "title": "编辑解析规则",
+                  "manageFree": true
+                }
+              },
+              {
+                "name": "manage-data-analyzeLook",
+                "meta": {
+                  "title": "查看解析规则",
+                  "manageFree": true
+                }
+              }
+            ]
+          },
+          {
+            "name": "manage",
+            "meta": {
+              "title": "权限管理"
+            },
+            "children": [
+              {
+                "name": "manage-user",
+                "meta": {
+                  "title": "用户列表"
+                }
+              },
+              {
+                "name": "manage-role",
+                "meta": {
+                  "title": "角色列表"
+                }
+              },
+              {
+                "name": "manage-power",
+                "meta": {
+                  "title": "权限管理"
+                }
+              },
+              {
+                "name": "manage-dept",
+                "meta": {
+                  "title": "部门列表"
+                }
+              }
+            ]
+          },
+          {
+            "name": "system-dict-manage",
+            "meta": {
+              "title": "系统字典管理"
+            }
+          },
+          {
+            "name": "system-sys-mail",
+            "meta": {
+              "title": "站内信"
+            }
+          },
+          {
+            "name": "system-operation-log",
+            "meta": {
+              "title": "平台操作日志"
+            }
+          },
+          {
+            "name": "login-log",
+            "meta": {
+              "title": "平台登录日志"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
